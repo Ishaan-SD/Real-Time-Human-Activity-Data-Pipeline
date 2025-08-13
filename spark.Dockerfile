@@ -15,5 +15,7 @@ RUN apt-get update && apt-get install -y wget && \
     wget -P /opt/spark/jars/ https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.11.1/commons-pool2-2.11.1.jar && \
     apt-get purge -y wget && apt-get clean
 
+    
 # Switch back to the default spark user
+
 USER spark
